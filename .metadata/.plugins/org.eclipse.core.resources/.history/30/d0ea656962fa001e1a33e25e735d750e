@@ -1,0 +1,10 @@
+package Default;
+
+public interface continentTraffic {
+	
+	public void Green();
+	public void Red();
+	public void yellow();
+	
+
+}

@@ -1,0 +1,8 @@
+basefolder.name = test-output/ExtentReport
+basefolder.datetimepattern=DD-MM-YY HH-MM-SS
+extent.reporter.spark.start= true
+extent.reporter.spark.out= test-output/SpartReport/Spark.html
+screenshot.dir = test-output/screenshots
+screenshot.rel.path = ./screenshots/
+
+

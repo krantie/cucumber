@@ -1,0 +1,49 @@
+package stepDefinitions;
+
+import static org.testng.Assert.assertEquals;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import utils.TestContextSetup;
+
+public class LandingStepDefinition {
+
+	public WebDriver driver;
+	public String pname;
+	public String Offerpageproduct;
+	TestContextSetup testcontextsetup;
+	
+	public LandingStepDefinition(TestContextSetup testcontextsetup) {
+		
+		this.testcontextsetup = testcontextsetup;
+	}
+	
+	@Given("user is on Greencart Landing page")
+	public void user_is_on_greencart_landing_page() {
+	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\krant\\kranthicucum\\msedgedriver.exe");
+	  testcontextsetup.driver =new EdgeDriver();
+	  driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+	  
+	}
+	@When("user search with Shortname {string} and extracted actual name of product")
+	public void user_search_with_shortname_and_extracted_actual_name_of_product(String SName) throws InterruptedException {
+	  driver.findElement(By.xpath("//input[@type='search']")).sendKeys(SName);
+	pname=  driver.findElement(By.xpath("//h4[normalize-space()='Tomato - 1 Kg']")).getText().split("-")[0].trim();
+	Thread.sleep(2000);
+			  System.out.println(pname + "is extended from home page");
+			  
+		
+	}
+	
+
+}

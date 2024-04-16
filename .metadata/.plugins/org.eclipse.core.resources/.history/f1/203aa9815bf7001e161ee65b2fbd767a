@@ -1,0 +1,36 @@
+package stepDefinitions;
+
+import java.io.IOException;
+
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
+import utils.TestContextSetup;
+
+public class Hooks {
+	
+	TestContextSetup testcontextsetup;
+	WebDriver driver = testcontextsetup.testBase.WebDriverManager();
+	
+	public Hooks(TestContextSetup testcontextsetup)
+	{
+		this.testcontextsetup = testcontextsetup;
+	}
+
+	
+	@After
+	public void AfterScenario() throws IOException
+	{
+		testcontextsetup.testBase.WebDriverManager().quit();
+	}
+	
+	@AfterStep
+	public void Addscreenshot(Scenario scenario)
+	{
+		if(scenario.isFailed())
+				{
+			
+				}
+		
+	}
+}

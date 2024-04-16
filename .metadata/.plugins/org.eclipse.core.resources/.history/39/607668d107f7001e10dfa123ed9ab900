@@ -1,0 +1,33 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class checkoutpage {
+	
+	public WebDriver driver;
+	
+	public checkoutpage(WebDriver driver) {
+		
+		this.driver =driver;
+	}
+	
+	By cartBag = By.xpath("//img[@alt='Cart']");
+	By checkoutButton = By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]");
+	
+
+	public void searchItem(String name)
+	{
+		driver.findElement(Search).sendKeys(name);
+	}
+	
+	public String getProductName()
+	{
+		return driver.findElement(ProductName).getText();
+	}
+
+	public void Topdeals()
+	{
+		driver.findElement(Topdeals).click();
+	}
+}

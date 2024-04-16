@@ -1,0 +1,36 @@
+package Default;
+
+public class IndianTraffic implements centralTraffic,continetTraffic{
+
+	public static void main(String[] args) {
+		
+		centralTraffic a= new IndianTraffic();
+		
+
+		
+		continetTraffic ct= new IndianTraffic();
+	}
+
+	@Override
+	public void Green() {
+		System.out.println("green light display");
+		
+	}
+
+	@Override
+	public void Red() {
+		System.out.println("Red  light display");
+	}
+
+	@Override
+	public void yellow() {
+		System.out.println("Yellow  light display");		
+	}
+
+	@Override
+	public void TrainSymbol() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package Default;
+
+public interface centralTraffic {
+	
+	public void TrainSymbol();
+	
+	
+
+}

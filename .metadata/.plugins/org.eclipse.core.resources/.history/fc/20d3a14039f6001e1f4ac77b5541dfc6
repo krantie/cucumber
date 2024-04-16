@@ -1,0 +1,16 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+
+public class Landing {
+	
+	
+	
+	
+	By Search = By.xpath("//input[@type='search']");
+	By ProductName	= By.xpath("//h4[normalize-space()='Tomato - 1 Kg']");
+	
+	
+	
+
+}

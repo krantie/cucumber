@@ -1,0 +1,12 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+
+public class Landing {
+	
+	
+	
+	
+	By Search = By.xpath("//input[@type='search']");
+
+}

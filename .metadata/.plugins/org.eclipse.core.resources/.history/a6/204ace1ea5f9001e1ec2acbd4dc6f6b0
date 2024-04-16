@@ -1,0 +1,10 @@
+package Default;
+
+public class basic2 {
+
+	
+	public void headervalidation()
+	{
+		
+	}
+}

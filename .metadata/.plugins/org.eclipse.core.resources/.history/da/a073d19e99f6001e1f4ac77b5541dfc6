@@ -1,0 +1,9 @@
+Feature: search and place the order for product
+
+Scenario: Search Experiance for product search in both home and offers page
+
+Given user is on Greencart Landing page
+When user search with Shortname "Tom" and extracted actual name of product
+Then user searched for "Tom" shortname in offers page to check 
+And if product equal with both pages
+

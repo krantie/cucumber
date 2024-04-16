@@ -1,0 +1,32 @@
+package Default;
+
+public class IndianTraffic implements centralTraffic,continetTraffic{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void Green() {
+		System.out.println("green light display");
+		
+	}
+
+	@Override
+	public void Red() {
+		System.out.println("Red  light display");
+	}
+
+	@Override
+	public void yellow() {
+		System.out.println("Yellow  light display");		
+	}
+
+	@Override
+	public void TrainSymbol() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

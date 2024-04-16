@@ -1,0 +1,15 @@
+package utils;
+
+import org.openqa.selenium.WebDriver;
+
+public class genericUtils {
+	
+	public WebDriver driver;
+	
+	public genericUtils(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+
+}

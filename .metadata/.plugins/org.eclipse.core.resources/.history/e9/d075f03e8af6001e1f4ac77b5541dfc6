@@ -1,0 +1,14 @@
+package stepDefinitions;
+
+import utils.TestContextSetup;
+
+public class Hooks {
+	
+	TestContextSetup testcontextsetup;
+	
+	public Hooks(TestContextSetup testcontextsetup)
+	{
+		
+	}
+
+}

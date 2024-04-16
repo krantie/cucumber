@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.665 s <<< FAILURE! - in TestSuite
+cucmberOptions.TestNGTestRunner.runScenario["Search Experiance for product search in both home and offers page", "search and place the order for product"](1)  Time elapsed: 20.396 s  <<< FAILURE!
+java.lang.AssertionError: expected [Tomato] but found [Potato]
+

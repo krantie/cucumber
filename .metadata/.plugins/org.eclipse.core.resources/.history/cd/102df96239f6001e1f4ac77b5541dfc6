@@ -1,0 +1,23 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Landing {
+	
+	public WebDriver driver;
+	
+	public Landing(WebDriver driver) {
+		
+		this.driver =driver;
+	}
+	
+	
+	
+	By Search = By.xpath("//input[@type='search']");
+	By ProductName	= By.xpath("//h4[normalize-space()='Tomato - 1 Kg']");
+	
+	
+	
+
+}
